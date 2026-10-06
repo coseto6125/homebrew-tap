@@ -1,27 +1,27 @@
 # Homebrew tap formula template for coseto6125/homebrew-tap.
 #
 # Release automation should replace:
-#   0.14.5
-#   f821c504b0600ba5cc9a2329683ca041296cb48908c3c64b1c30b1c3b16f155f
-#   5b0b5fe2e686de4643c59c28cfe91912bccaaadfc97d23a2943680d58006f555
+#   0.14.6
+#   2a9cf7d97d8f70f6b51bd73b7f6903b328d9f3c6d353ca15682bcf5361068c08
+#   905fb9fc487439d01b3e185080feb5a0286dd460822d814b81af7039ebab1005
 #
 # Expected GitHub Release assets:
-#   ecp-v0.14.5-aarch64-apple-darwin.tar.gz
-#   ecp-v0.14.5-x86_64-apple-darwin.tar.gz
+#   ecp-v0.14.6-aarch64-apple-darwin.tar.gz
+#   ecp-v0.14.6-x86_64-apple-darwin.tar.gz
 
 class EgentCodePlexus < Formula
   desc "Code intelligence graph CLI for LLM agents"
   homepage "https://github.com/coseto6125/egent-code-plexus"
   license "MIT OR Apache-2.0"
-  version "0.14.5"
+  version "0.14.6"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/coseto6125/egent-code-plexus/releases/download/v#{version}/ecp-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "f821c504b0600ba5cc9a2329683ca041296cb48908c3c64b1c30b1c3b16f155f"
+      sha256 "2a9cf7d97d8f70f6b51bd73b7f6903b328d9f3c6d353ca15682bcf5361068c08"
     else
       url "https://github.com/coseto6125/egent-code-plexus/releases/download/v#{version}/ecp-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "5b0b5fe2e686de4643c59c28cfe91912bccaaadfc97d23a2943680d58006f555"
+      sha256 "905fb9fc487439d01b3e185080feb5a0286dd460822d814b81af7039ebab1005"
     end
   end
 
